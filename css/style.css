@@ -36,7 +36,7 @@ p {
     margin-bottom: 0px;
     }
      /* Стилі для планшетів і мобільних пристроїв */
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .container {
         width: 100%;
       }
@@ -131,6 +131,41 @@ a {
 .link:hover {
     color: var(--accent-color);        
 }
+
+/* Псевдо-елементи (before/after) */
+
+.email::before{
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/email.svg");
+}
+
+.phone::before {
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/phone.svg");
+}
+
 /* deletes the marker */
 ul {
     list-style: none;
