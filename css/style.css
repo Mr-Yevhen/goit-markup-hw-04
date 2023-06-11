@@ -224,6 +224,21 @@ ul {
     margin-right: 50px;
 }
 
+/* Regular Customers */
+
+.rc-section {
+    padding-top: 94px;
+    background-color: #F5F5F5;
+}
+
+.title-rc {
+    margin-bottom: 50px;
+}
+
+.list-rc {
+    display: flex;
+}
+
 /* footer */
 
 .footer {
@@ -321,8 +336,13 @@ ul {
     margin-top: 0px;
 }
 
+.wwd-section {
+    background-color: #F5F5F5;
+}
+
 .flex.wwd {
-    margin-bottom: 94px;
+    padding: 94px;
+    margin-bottom: 0;
 }
 
 .flex-item-wwd:not(:last-child) {
@@ -334,6 +354,10 @@ ul {
 }
 
 /* Our team */
+
+.our-team-section {
+    background-color: #F5F4FA;
+}
 
 .flex.ot {
     margin-bottom: 0px;
