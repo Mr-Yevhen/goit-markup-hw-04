@@ -37,13 +37,6 @@ p {
     margin-bottom: 0px;
 }
 
-/* Стилі для планшетів і мобільних пристроїв */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-}
-
 /* text */
 .text {
     color: var(--second-text-color);
@@ -67,7 +60,6 @@ body {
     line-height: 1.17;
     font-weight: 500;
     margin: auto auto;
-
 }
 
 /* hero */
