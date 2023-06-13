@@ -133,41 +133,41 @@ a {
 .link:focus,
 .link:hover {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
-/* Псевдо-елементи (before/after) */
+/* header email and phone  */
 
-.email::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
-
+.icon-email {
     width: 16px;
     height: 12px;
+    fill: #757575;
     margin-right: 10px;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../images/email.svg");
 }
 
-.phone::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    top: -1px;
+.link.email:hover .icon-email {
+  fill: var(--accent-color); 
+}
 
+.link.email:focus .icon-email {
+    fill: var(--accent-color)
+}
+
+.icon-phone {
     width: 10px;
     height: 16px;
+    fill: #757575;
     margin-right: 10px;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("../images/phone.svg");
 }
+
+.link.phone:hover .icon-phone {
+  fill: var(--accent-color); 
+}
+
+.link.phone:focus .icon-phone {
+    fill: var(--accent-color)
+}
+
 
 /* deletes the marker */
 ul {
@@ -584,6 +584,39 @@ ul {
 
 
 
+/* Псевдо-елементи (before/after) */
+
+/* .email::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/email.svg");
+} */
+
+/* .phone::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/phone.svg");
+} */
 
 
 /* :root {
