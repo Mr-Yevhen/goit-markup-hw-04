@@ -80,9 +80,9 @@ body {
     width: 216px;
     height: 50px;
     border-radius: 4px;
-    
+
     margin-bottom: 200px;
-    margin-top: 30px;      
+    margin-top: 30px;
     padding: 10px 24px;
     border: none;
     font-family: inherit;
@@ -146,7 +146,7 @@ a {
 }
 
 .link.email:hover .icon-email {
-  fill: var(--accent-color); 
+    fill: var(--accent-color);
 }
 
 .link.email:focus .icon-email {
@@ -161,7 +161,7 @@ a {
 }
 
 .link.phone:hover .icon-phone {
-  fill: var(--accent-color); 
+    fill: var(--accent-color);
 }
 
 .link.phone:focus .icon-phone {
@@ -361,6 +361,11 @@ ul {
     background-image: url("../images/astronaut.svg");
     background-size: 70 70;
 } */
+
+/* SVG-setup */
+
+/* Benefits-section */
+
 .icon-item-b {
     display: flex;
     width: 270px;
@@ -372,6 +377,31 @@ ul {
 .icon-item {
     margin: auto;
 }
+
+/* Our team section */
+
+/* instagram */
+
+.social-link-ot {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #afb1b8;
+}
+
+.link-ot {
+    margin: auto;
+}
+
+.social-link-ot:hover,
+.social-link-ot:focus {
+    background-color: var(--accent-color);
+    fill: #ffffff;
+}
+
+
 
 .flex-item-b {
     width: 270px;
@@ -487,11 +517,11 @@ ul {
     letter-spacing: 0.03em;
     line-height: 1.63;
     padding: 6px 22px;
-    
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    
+
     text-align: center;
     color: var(--primary-text-color);
 }
@@ -549,15 +579,16 @@ ul {
 }
 
 .list-container-item {
-    width: calc((100% - 60px) /3 );
+    width: calc((100% - 60px) /3);
     margin: 0px 30px 30px 0px;
     border: 1px solid #eeeeee;
 }
+
 .list-container-item:hover,
 .list-container-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
