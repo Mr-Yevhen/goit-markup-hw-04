@@ -250,7 +250,7 @@ ul {
 .rc-client {
     fill: #afb1b8;
 }
- 
+
 .list-rc-item:hover .rc-client {
     fill: var(--accent-color);
 }
