@@ -331,7 +331,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.flex-title-b::before {
+/* .flex-title-b::before {
     content: "";
     display: block;
     width: 270px;
@@ -340,9 +340,9 @@ ul {
     background-position: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
-}
+} */
 
-.flex-item-b:nth-child(1) ::before {
+/* .flex-item-b:nth-child(1) ::before {
     background-image: url("../images/suputnic.svg");
     background-size: 65.32 70;
 }
@@ -360,6 +360,17 @@ ul {
 .flex-item-b:nth-child(4) ::before {
     background-image: url("../images/astronaut.svg");
     background-size: 70 70;
+} */
+.icon-item-b {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.icon-item {
+    margin: auto;
 }
 
 .flex-item-b {
