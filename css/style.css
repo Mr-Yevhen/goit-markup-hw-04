@@ -151,10 +151,12 @@ a {
 /* header email and phone  */
 
 .icon-email {
+    position: relative;
+    top: 2px;
     width: 16px;
     height: 12px;
     fill: #757575;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .link.email:hover .icon-email {
@@ -166,10 +168,12 @@ a {
 }
 
 .icon-phone {
+    position: relative;
+    top: 3px;
     width: 10px;
     height: 16px;
     fill: #757575;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .link.phone:hover .icon-phone {
@@ -489,7 +493,7 @@ ul {
 }
 
 .flex.wwd {
-    padding: 94px 0;
+    padding: 0 0 94px 0;
     margin-bottom: 0;
 }
 
@@ -499,6 +503,30 @@ ul {
 
 .title.title-wwd {
     margin-bottom: 50px;
+}
+
+.wwd-container {
+    position: relative;
+}
+
+.wwd-descr {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: 3px;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
 }
 
 /* Our team */
