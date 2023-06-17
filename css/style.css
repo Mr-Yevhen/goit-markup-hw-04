@@ -62,6 +62,50 @@ body {
     margin: auto auto;
 }
 
+/* backdrop */
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.backdrop-item {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+}
+
+.button-backdrop {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: #ffffff;
+}
+
+/* HERO button settings */
+
+
 /* hero */
 .hero {
     overflow: auto;
@@ -73,8 +117,6 @@ body {
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-photo.jpg");
 }
-
-/* HERO button settings */
 
 .hero-button {
     width: 216px;
@@ -135,6 +177,7 @@ a {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
+
 /* header */
 .hover {
     position: absolute;
@@ -515,7 +558,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     bottom: 3px;
     width: 370px;
     height: 70px;
