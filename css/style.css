@@ -135,6 +135,18 @@ a {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
+/* header */
+.hover {
+    position: absolute;
+    bottom: -197%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.item {
+    position: relative;
+}
 
 /* header email and phone  */
 
