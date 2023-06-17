@@ -89,7 +89,7 @@ body {
     height: 581px;
     padding: 15px;
 
-    background-color: #ffffff;
+    background-color: var(--bgc);
 }
 
 .backdrop-exit-button {
@@ -103,7 +103,7 @@ body {
     border-radius: 50%;
     border: none;
 
-    background-color: #ffffff;
+    background-color: var(--bgc);
 }
 
 /* HERO button settings */
@@ -278,7 +278,7 @@ ul {
 
 .rc-section {
     padding-top: 94px;
-    background-color: #ffffff;
+    background-color: var(--bgc);
     padding-bottom: 94px;
 
 }
@@ -351,7 +351,7 @@ ul {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    fill: #ffffff;
+    fill: var(--bgc);
 }
 
 .social-link-footer:hover {
@@ -386,14 +386,14 @@ ul {
 .logo-footer {
     margin-top: 36px;
     display: block;
-    color: #ffffff;
+    color: var(--bgc);
 }
 
 .address-footer,
 .address-footer>a {
     margin-top: 0;
     margin-bottom: 0;
-    color: white;
+    color: var(--bgc);
 }
 
 /* join us */
@@ -407,7 +407,7 @@ ul {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--bgc);
     margin-bottom: 20px;
 }
 
@@ -493,7 +493,7 @@ ul {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--bgc);
     fill: #afb1b8;
 }
 
@@ -503,12 +503,12 @@ ul {
 
 .social-link-ot:hover {
     background-color: var(--accent-color);
-    fill: #ffffff;
+    fill: var(--bgc);
 }
 
 .social-link-item a:focus .social-link-ot {
     background-color: var(--accent-color);
-    fill: #ffffff;
+    fill: var(--bgc);
 }
 
 .flex-item-b {
@@ -535,7 +535,7 @@ ul {
 }
 
 .wwd-section {
-    background-color: #ffffff;
+    background-color: var(--bgc);
 }
 
 .flex.wwd {
@@ -572,7 +572,7 @@ ul {
     line-height: 16px;
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: var(--bgc);
 }
 
 /* Our team */
@@ -606,7 +606,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -632,7 +631,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     margin-bottom: 94px;
-    background-color: #ffffff;
+    background-color: var(--bgc);
 }
 
 .header-ot {
@@ -707,7 +706,7 @@ ul {
     height: 100%;
     
     background-color: rgba(33, 150, 243, 0.9);
-    color: #FFFFFF;
+    color: var(--bgc);
 
     font-weight: 400;
     font-size: 18px;
