@@ -69,6 +69,10 @@ body {
     pointer-events: none;
 }
 
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -77,19 +81,23 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+
+    transition: 250ms opacity linear;
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 
     width: 528px;
     height: 581px;
     padding: 15px;
 
     background-color: var(--bgc);
+
+    transition: 250ms opacity linear, 250ms transform linear;
 }
 
 .backdrop-exit-button {
@@ -687,10 +695,13 @@ ul {
 
 .portfolio-container {
     position: relative;
+    overflow: hidden;
 }
 
-.list-container-item:hover .descr-portfolio {
+a:hover .portfolio-container .descr-portfolio,
+a:focus .portfolio-container .descr-portfolio {
     opacity: 1;
+    transform: translateY(0%);
 }
 
 .descr-portfolio {
@@ -701,7 +712,9 @@ ul {
     top: 0;
     
     opacity: 0;
-    transition: 400ms opacity linear;
+    transition: 250ms opacity linear, 250ms transform linear;
+
+    transform: translateY(100%);
 
     width: 100%;
     height: 100%;
