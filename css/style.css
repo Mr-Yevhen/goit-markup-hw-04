@@ -114,6 +114,7 @@ body {
     overflow: auto;
     height: 600px;
     max-width: 1600px;
+    background-repeat: no-repeat;
     margin-right: auto;
     margin-left: auto;
     color: var(--bgc);
@@ -763,17 +764,52 @@ ul {
 
 
 
+/* test */
+.testt {
+    overflow: hidden;
+    display: inline-flex;
+    margin: 10px;
+}
+.button-test {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    padding: 10px 40px;
+}
+.button-test::after {
+    content: '';
+    display: inline-block;
 
+    margin-left: 5px;
 
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    transform: translateY(0px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-test:hover::after,
+.button-test:focus::after {
+    transform: translateY(-40px);
+}
+.button-test::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 36%;
+    right: 40px;
 
-
-
-
-
-
-
-
-
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    transform: translateY(40px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-test:hover::before,
+.button-test:focus::before {
+    transform: translateY(0px);
+}
+/* test */
 
 
 
